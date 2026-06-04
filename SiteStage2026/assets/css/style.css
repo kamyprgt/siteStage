@@ -1,0 +1,1825 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #292524;
+    padding-top: 85px;
+}
+
+img {
+    display: block;
+}
+
+/* =========================================================
+   TITRES
+========================================================= */
+.section-title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #292524;
+}
+
+.histoire h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #292524;
+}
+
+.arts-content h2 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #292524;
+}
+
+/* =========================================================
+   BOUTONS
+========================================================= */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: #027b56 !important;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.btn:hover {
+    background: #035c40;
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    background: transparent !important;
+    border: 2px solid #027b56 !important;
+    color: #027b56 !important;
+}
+
+.btn-outline:hover {
+    background: #027b56 !important;
+    color: #fff !important;
+}
+
+.small-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+}
+
+/* =========================================================
+   TAG
+========================================================= */
+.tag {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #dfe6ff;
+    color: #027b56;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+.header {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e7e5e4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* ---------------- LOGO ---------------- */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.logo-img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 500;
+    color: #027b56;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.logo span {
+    display: block;
+    font-size: 13px;
+    color: #57534e;
+    line-height: 1.2;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+.nav {
+    display: flex;
+    gap: 38px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    transition: .3s;
+}
+
+.nav a:hover,
+.nav a.active {
+    color: #027b56 !important;
+}
+
+@media (max-width: 991px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-top: 20px;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 85px;
+        right: 0;
+        left: 0;
+        background: #f5f5f5;
+        border-bottom: 1px solid #e7e5e4;
+    }
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 90px 80px;
+    background: #edf5ef;
+}
+
+/* ---------------- CONTENU ---------------- */
+.intro-content {
+    flex: 1;
+}
+
+.intro h2 {
+    font-size: 58px;
+    font-weight: 500;
+    color: #027b56;
+    margin: 15px 0 10px;
+}
+
+.intro h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.intro p {
+    line-height: 1.9;
+    color: #444;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+/* ---------------- BOUTONS ---------------- */
+.intro-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* ---------------- IMAGE ---------------- */
+.intro-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-image img {
+    width: 100%;
+    max-width: 450px;
+    object-fit: contain;
+}
+
+/* =========================================================
+   INTRO ENSEIGNANTE
+========================================================= */
+.introEnseign {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 90px 80px;
+    background: #edf5ef;
+}
+
+/* ---------------- CONTENU ---------------- */
+.introEnseign-content {
+    flex: 1;
+}
+
+.introEnseign h2 {
+    font-size: 58px;
+    font-weight: 500;
+    color: #027b56;
+    margin: 15px 0 10px;
+}
+
+.introEnseign h3 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.introEnseign p {
+    line-height: 1.9;
+    color: #444;
+    max-width: 600px;
+    margin-bottom: 35px;
+}
+
+/* ---------------- BOUTONS ---------------- */
+.introEnseign-buttons {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+/* ---------------- IMAGE ---------------- */
+.introEnseign-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.introEnseign-image img {
+    width: 100%;
+    max-width: 380px;
+    object-fit: contain;
+}
+
+/* =========================================================
+   SECTIONS GLOBALES
+========================================================= */
+.histoire {
+    padding: 90px 50px;
+    background: #fff;
+}
+
+.disciplines {
+    padding: 90px 50px;
+    background: #fff;
+}
+
+.cours {
+    padding: 90px 50px;
+    background: #edf5ef;
+}
+
+.galerie {
+    padding: 90px 50px;
+    background: #fff;
+}
+
+.arts-internes {
+    background: #edf5ef;
+}
+
+/* =========================================================
+   HISTOIRE
+========================================================= */
+.histoire {
+    text-align: center;
+}
+
+.histoire h2 {
+    margin-bottom: 35px;
+    text-align: left;
+    margin-left: 265px;
+}
+
+/* ---------------- TEXTE ---------------- */
+.histoire-text {
+    max-width: 720px;
+    margin: auto;
+}
+
+.histoire-text p {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.9;
+    color: #444;
+}
+
+/* =========================================================
+   SECTION SPLIT
+   Section générique image + texte
+========================================================= */
+.section-split {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 90px 80px;
+    background: #edf5ef;
+}
+
+.section-split-white {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 90px 80px;
+    background: #fff;
+}
+
+/* ---------------- IMAGE ---------------- */
+.section-split-image img {
+    width: 500px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
+}
+
+/* ---------------- CONTENU ---------------- */
+.section-split-content {
+    max-width: 620px;
+}
+
+.section-split-content h2 {
+    margin: 25px 0;
+    font-size: 40px;
+    font-weight: 500;
+    color: #292524;
+}
+
+.section-split-content p {
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.section-split-content a {
+    line-height: 1.9;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* ---------------- TEXTE ITALIQUE ---------------- */
+.italic {
+    font-style: italic;
+}
+
+/* =========================================================
+   CARDS
+========================================================= */
+.discipline-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.cours-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.discipline-card:hover {
+    transform: translateY(-5px);
+}
+
+.cours-card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================================================
+   DISCIPLINES
+========================================================= */
+.disciplines {
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 55px;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.disciplines-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* ---------------- CARD ---------------- */
+.discipline-card {
+    width: 320px;
+    text-align: left;
+}
+
+/* ---------------- IMAGE ---------------- */
+.discipline-img {
+    position: relative;
+}
+
+.discipline-img img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+/* ---------------- BADGE ---------------- */
+.discipline-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    padding: 6px 12px;
+    background: rgba(255, 255, 255, .95);
+    color: #027b56;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* ---------------- TEXTE ---------------- */
+.discipline-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #027b56;
+    margin: 20px 18px 12px;
+}
+
+.discipline-card p {
+    line-height: 1.9;
+    color: #444;
+    padding: 0 18px 20px;
+}
+
+.discipline-card .btn {
+    margin: 0 18px 22px;
+}
+
+/* =========================================================
+   COURS
+========================================================= */
+.cours {
+    text-align: center;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.cours-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* ---------------- CARD ---------------- */
+.cours-card {
+    width: 550px;
+    padding: 35px;
+    text-align: left;
+}
+
+/* ---------------- TEXTE ---------------- */
+.cours-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #027b56;
+    margin-bottom: 25px;
+}
+
+.cours-card p {
+    line-height: 1.9;
+    color: #444;
+    margin-bottom: 14px;
+}
+
+/* ---------------- ESSAI ---------------- */
+.cours-essai {
+    margin-top: 35px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #027b56;
+}
+
+/* =========================================================
+   GALERIE
+========================================================= */
+.galerie {
+    text-align: center;
+}
+
+/* ---------------- GRID ---------------- */
+.galerie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+/* ---------------- IMAGES ---------------- */
+.galerie-grid img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
+    transition: .3s ease;
+}
+
+.galerie-grid img:hover {
+    transform: scale(1.02);
+}
+
+/* =========================================================
+   BANDEROLE
+========================================================= */
+.banderole {
+    text-align: center;
+    background: #edf5ef;
+    padding: 90px 50px;
+}
+
+.banderole h2 {
+    margin-bottom: 35px;
+    font-size: 40px;
+    font-weight: 600;
+    color: #292524;
+}
+
+/* ---------------- TEXTE ---------------- */
+.banderole-text {
+    max-width: 800px;
+    margin: auto;
+}
+
+.banderole-text p {
+    margin-bottom: 20px;
+    line-height: 1.9;
+    color: #444;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* =========================================================
+   VOIE DE LA DOUCEUR
+========================================================= */
+.voieDouceur {
+    padding: 90px 50px;
+    background: #fff;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.voieDouceur-text {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+/* ---------------- SYMBOLE ---------------- */
+.voieDouceur-symbol {
+    font-size: 120px;
+    line-height: 1;
+    font-weight: 500;
+    color: #027b56;
+    flex-shrink: 0;
+}
+
+/* ---------------- CONTENU ---------------- */
+.voieDouceur-content {
+    flex: 1;
+}
+
+.voieDouceur h2 {
+    margin-bottom: 35px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #292524;
+}
+
+.voieDouceur-content p {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.9;
+    color: #444;
+}
+
+.voieDouceur-content a {
+    line-height: 1.9;
+    text-decoration: none;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media screen and (max-width: 700px) {
+    .voieDouceur-text {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .voieDouceur-symbol {
+        font-size: 80px;
+    }
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+.footer {
+    padding: 50px 20px 20px;
+    background: #00543e;
+    color: #fff;
+}
+
+/* --------------- CONTAINER ---------------- */
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+/* ---------------- SECTION ---------------- */
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-section h4 {
+    margin-bottom: 14px;
+    font-size: 15px;
+    color: #f5f5f5;
+}
+
+.footer-section p {
+    margin-bottom: 6px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #e7e5e4;
+}
+
+.footer-section a {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #e7e5e4;
+    text-decoration: none;
+}
+
+.footer-section a:not(.footer-btn) {
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* ---------------- BOUTON ---------------- */
+.footer-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #027b56 !important;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-btn:hover {
+    background: #035c40;
+}
+
+/* ---------------- BAS FOOTER ---------------- */
+.footer-bottom {
+    margin-top: 35px;
+    padding-top: 15px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 13px;
+    color: #a8a29e;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #a8a29e;
+}
+
+/* =========================================================
+   PAGE MENTIONS LEGALES
+========================================================= */
+.legal-main {
+    padding: 40px 50px;
+    background: #edf5ef;
+}
+
+/* ---------------- SECTION ---------------- */
+.legal-section {
+    margin: auto;
+    padding: 40px;
+}
+
+/* ---------------- TITRE ---------------- */
+.legal-section h1 {
+    margin: 20px 0 50px;
+    font-size: 52px;
+    font-weight: 500;
+    color: #027b56;
+}
+
+/* ---------------- BLOCS ---------------- */
+.legal-block {
+    margin-bottom: 50px;
+}
+
+.legal-block:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------------- SOUS TITRES ---------------- */
+.legal-block h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #292524;
+}
+
+/* ---------------- TEXTE ---------------- */
+.legal-block p {
+    margin-bottom: 18px;
+    line-height: 1.9;
+    color: #444;
+    font-size: 16px;
+}
+
+/* ========================================================
+   BOUTON RETOUR
+========================================================= */
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 35px;
+    padding: 12px 18px;
+    background: #027b56;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.back-btn:hover {
+    background: #035c40;
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   CITATION
+========================================================= */
+.quote-box {
+    margin-top: 20px;
+    padding: 20px 25px;
+    background: #dfe6ff;
+    border-left: 5px solid #00543e;
+    border-radius: 0 14px 14px 0;
+}
+
+.quote-box p {
+    margin: 0;
+    font-size: 185x;
+    line-height: 1.9;
+    color: #00543e;
+    font-style: italic;
+}
+
+/* =========================================================
+   DEROULEMENT SEANCE
+========================================================= */
+.session {
+    padding: 90px 50px;
+    background: #f5f5f5;
+}
+
+/* ---------------- TITRE ---------------- */
+.session .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.session-container {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* ---------------- CARD ---------------- */
+.session-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 30px;
+    background: #edf5ef;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .05);
+}
+
+/* ---------------- NUMERO ---------------- */
+.session-number {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #027b56;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* ---------------- CONTENU ---------------- */
+.session-content h3 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #292524;
+}
+
+.session-content p {
+    line-height: 1.9;
+    color: #444;
+    max-width: 850px;
+    font-size: 17px;
+}
+
+/* =========================================================
+   BENEFICES
+========================================================= */
+.benefices {
+    padding: 90px 50px;
+    background: #edf5ef;
+}
+
+/* ---------------- TITRE ---------------- */
+.benefices .section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.benefices-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* ---------------- CARD ---------------- */
+.benefice-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 22px 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .06);
+    transition: .3s ease;
+}
+
+.benefice-card:hover {
+    transform: translateY(-4px);
+}
+
+/* ---------------- ICONE ---------------- */
+.benefice-card img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* ---------------- TEXTE ---------------- */
+.benefice-card p {
+    line-height: 1.8;
+    color: #444;
+    font-size: 17px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media screen and (max-width: 850px) {
+    .benefices-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   FORME ENSEIGNEE
+========================================================= */
+.forme {
+    padding: 90px 50px;
+    background: #f5f5f5;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.forme-container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ---------------- TITRE ---------------- */
+.forme .section-title {
+    margin-bottom: 35px;
+}
+
+/* ---------------- SOUS TITRE ---------------- */
+.forme-subtitle {
+    margin-bottom: 35px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #027b56;
+}
+
+/* ---------------- TEXTE ---------------- */
+.forme-text p {
+    margin-bottom: 28px;
+    line-height: 1.9;
+    font-size: 18px;
+    color: #444;
+}
+
+/* ---------------- INFO ---------------- */
+.forme-info {
+    margin-top: 45px;
+    padding: 30px;
+    background: #edf5ef;
+    border-left: 5px solid #027b56;
+    border-radius: 0 18px 18px 0;
+}
+
+/* ---------------- TEXTE INFO ---------------- */
+.forme-info p {
+    line-height: 1.9;
+    font-size: 17px;
+    color: #444;
+}
+
+/* ---------------- LIEN ---------------- */
+.forme-info a {
+    color: #027b56;
+    text-decoration: underline;
+    transition: .3s ease;
+}
+
+.forme-info a:hover {
+    color: #035c40;
+}
+
+/* =========================================================
+   ACCOMPAGNEMENT
+========================================================= */
+.accompagnement {
+    padding: 90px 50px;
+    background: linear-gradient(135deg, #027b56, #038f64);
+}
+
+/* ---------------- TITRE ---------------- */
+.accompagnement .section-title {
+    text-align: center;
+    margin-bottom: 55px;
+    color: #fff;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.accompagnement-container {
+    max-width: 900px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+/* ---------------- CARD ---------------- */
+.accompagnement-card {
+    padding: 35px;
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 18px;
+    backdrop-filter: blur(4px);
+    transition: .3s ease;
+}
+
+.accompagnement-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 255, 255, .12);
+}
+
+/* ---------------- TITRE CARD ---------------- */
+.accompagnement-card h3 {
+    margin-bottom: 18px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* ---------------- TEXTE ---------------- */
+.accompagnement-card p {
+    line-height: 1.9;
+    color: rgba(255, 255, 255, .92);
+    font-size: 14px;
+}
+
+/* =========================================================
+   TARIFS
+========================================================= */
+.tarifs {
+    padding: 90px 50px;
+    background: #f5f5f5;
+}
+
+/* ---------------- CARD ---------------- */
+.tarifs-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 60px 50px;
+    background: #edf5ef;
+    border-radius: 24px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
+    text-align: center;
+}
+
+/* ---------------- TITRE ---------------- */
+.tarifs-card h2 {
+    margin-bottom: 45px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #292524;
+}
+
+/* ---------------- CONTENU ---------------- */
+.tarifs-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.tarifs-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.tarifs-content strong {
+    color: #292524;
+}
+
+/* ---------------- ESSAI ---------------- */
+.tarifs-essai {
+    margin-top: 45px;
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    color: #2563eb;
+}
+
+/* =========================================================
+   HISTORIQUE QI GONG
+========================================================= */
+.historique {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 90px 80px;
+    background: #f5f5f5;
+}
+
+/* ---------------- IMAGE ---------------- */
+.historique-image img {
+    width: 500px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
+    object-fit: cover;
+}
+
+/* ---------------- CONTENU ---------------- */
+.historique-content {
+    flex: 1;
+}
+
+.historique-content h2 {
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #292524;
+}
+
+/* ---------------- LISTE ---------------- */
+.historique-list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+/* ---------------- CARD ---------------- */
+.historique-card {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 28px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .05);
+    transition: .3s ease;
+}
+
+.historique-card:hover {
+    transform: translateY(-3px);
+}
+
+/* ---------------- CARD ACTIVE ---------------- */
+.historique-card.active {
+    background: #dff5e8;
+    border: 1px solid #86efac;
+}
+
+/* ---------------- DATE ---------------- */
+.historique-date {
+    flex-shrink: 0;
+    padding: 12px 18px;
+    background: #027b56;
+    color: #fff;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* ---------------- TEXTE ---------------- */
+.historique-card p {
+    line-height: 1.8;
+    color: #444;
+    font-size: 15px;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media screen and (max-width: 1000px) {
+    .historique {
+        flex-direction: column;
+    }
+    .historique-image img {
+        width: 100%;
+    }
+}
+
+/* =========================================================
+   HORAIRES ET TARIFS
+========================================================= */
+.tarifs1 {
+    padding: 90px 50px;
+    background: #027b56;
+    text-align: center;
+}
+
+/* ---------------- TITRE ---------------- */
+.tarifs1 h2 {
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* ---------------- CARD ---------------- */
+.tarifs1-card {
+    max-width: 700px;
+    margin: auto;
+    padding: 50px;
+    background: rgba(255, 255, 255, .10);
+    border-radius: 22px;
+    backdrop-filter: blur(5px);
+}
+
+/* ---------------- TEXTE ---------------- */
+.tarifs1-card p {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.tarifs1-card strong {
+    font-weight: 600;
+}
+
+/* ---------------- ESSAI ---------------- */
+.tarifs1-essai {
+    font-size: 20px;
+    font-weight: 500;
+    color: #dff5e8;
+}
+
+/* =========================================================
+   FORMATION
+========================================================= */
+.formation {
+    padding: 90px 50px;
+    background: #fff;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.formation-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ---------------- TITRE ---------------- */
+.formation .section-title {
+    margin-bottom: 50px;
+}
+
+/* --------------- LISTE ---------------- */
+.formation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ---------------- CARD ---------------- */
+.formation-card {
+    padding: 35px 40px;
+    background: #eef6f1;
+    border-radius: 22px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .04);
+    transition: .3s ease;
+}
+
+.formation-card:hover {
+    transform: translateY(-3px);
+}
+
+/* ---------------- TITRE CARD ---------------- */
+.formation-card h3 {
+    margin-bottom: 22px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f7d5c;
+}
+
+.formation-card a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* ---------------- TEXTE ---------------- */
+.formation-card p {
+    line-height: 2;
+    font-size: 16px;
+    color: #4d5b53;
+}
+
+/* =========================================================
+   EXPLORATIONS
+========================================================= */
+.explorations {
+    padding: 85px 45px;
+    background: #fff;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.explorations-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ---------------- TITRE ---------------- */
+.explorations .section-title {
+    margin-bottom: 35px;
+}
+
+/* ---------------- INTRO ---------------- */
+.explorations-intro {
+    margin-bottom: 45px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #4d5b53;
+}
+
+/* ---------------- GRID ---------------- */
+.explorations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+/* ---------------- CARD ---------------- */
+.exploration-card {
+    padding: 38px;
+    background: #eef6f1;
+    border-radius: 24px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .04);
+    transition: .3s ease;
+}
+
+.exploration-card:hover {
+    transform: translateY(-4px);
+}
+
+/* ---------------- ICONE ---------------- */
+.exploration-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* --------------- TITRE ---------------- */
+.exploration-card h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2f7d5c;
+}
+
+.exploration-card a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* ---------------- TEXTE ---------------- */
+.exploration-card p {
+    line-height: 1.9;
+    font-size: 15px;
+    color: #4d5b53;
+}
+
+/*=========================================================
+    SECTION TEXTE
+========================================================= */
+.sectionTexte {
+    padding: 90px 50px;
+    text-align: center;
+    background: #fff;
+}
+
+.sectionTexte h2 {
+    margin-bottom: 35px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #292524;
+    text-align: left;
+    margin-left: 240px;
+}
+
+/* ---------------- TEXTE ---------------- */
+.sectionTexte-text {
+    max-width: 780px;
+    margin: auto;
+}
+
+.sectionTexte-text p {
+    text-align: left;
+    margin-bottom: 20px;
+    line-height: 1.9;
+    color: #444;
+}
+
+.sectionTexte-text a {
+    text-align: left;
+    argin-bottom: 20px;
+    line-height: 1.9;
+    text-decoration: none;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+.contact-section {
+    padding: 90px 50px;
+    background: #f5f5f5;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 450px;
+    gap: 50px;
+}
+
+/* =========================================================
+   INFORMATIONS
+========================================================= */
+.contact-info .section-title {
+    margin-bottom: 45px;
+}
+
+/* ---------------- ITEM ---------------- */
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 35px;
+}
+
+/* ---------------- ICONE ---------------- */
+.contact-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dff5e8;
+    border-radius: 14px;
+    flex-shrink: 0;
+}
+
+.contact-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+/* ---------------- TEXTE ---------------- */
+.contact-item h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #292524;
+}
+
+.contact-item p {
+    margin-bottom: 8px;
+    color: #027b56;
+    font-size: 18px;
+}
+
+.contact-item span {
+    color: #57534e;
+    font-size: 15px;
+}
+
+/* =========================================================
+   HORAIRES
+========================================================= */
+.contact-horaires {
+    padding: 35px;
+    background: #edf5ef;
+    border-radius: 24px;
+}
+
+/* ---------------- TITRE ---------------- */
+.contact-horaires h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #292524;
+}
+
+/* ---------------- CARD ---------------- */
+.horaire-card {
+    background: #fff;
+    padding: 28px;
+    margin-bottom: 25px;
+    border-radius: 18px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .05);
+}
+
+.horaire-card h3 {
+    margin-bottom: 18px;
+    color: #027b56;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.horaire-card p {
+    margin-bottom: 10px;
+    color: #444;
+    line-height: 1.8;
+}
+
+/* ---------------- ESSAI ---------------- */
+.essai-gratuit {
+    margin-top: 10px;
+    padding: 20px;
+    text-align: center;
+    background: #027b56;
+    color: #fff;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media screen and (max-width: 900px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   COMMUNICATION RELATIONNELLE
+========================================================= */
+.communication {
+    padding: 85px 45px;
+    background: #fff;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.communication-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ---------------- CARD ---------------- */
+.communication-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+    padding: 40px;
+    background: #eef6f1;
+    border-radius: 24px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .04);
+}
+
+/* ---------------- ICONE ---------------- */
+.communication-card img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* ---------------- TITRE ---------------- */
+.communication-content h2 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 500;
+    color: #292524;
+}
+
+/* ---------------- TEXTE ---------------- */
+.communication-content p {
+    margin-bottom: 18px;
+    line-height: 1.9;
+    font-size: 16px;
+    color: #4d5b53;
+}
+
+.communication-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------------- LIENS ---------------- */
+.communication-content a {
+    color: #027b56;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.communication-content a:hover {
+    text-decoration: underline;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media screen and (max-width: 700px) {
+    .communication-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .communication-card img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* =========================================================
+   CTA CONTACT
+========================================================= */
+.cta-contact {
+    padding: 100px 20px;
+    background: #eef6f1;
+}
+
+.cta-contact-container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.cta-contact h2 {
+    margin-bottom: 25px;
+    font-size: 42px;
+    font-weight: 600;
+    color: #1c1917;
+}
+
+.cta-contact p {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #57534e;
+}
+
+/* ---------------- BOUTONS ---------------- */
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+.cta-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 29px;
+    border-radius: 14px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: .3s ease;
+}
+
+.cta-btn img {
+    width: 22px;
+    height: 22px;
+}
+
+/* ---------------- BOUTON VERT ---------------- */
+.cta-btn-primary {
+    background: #027b56;
+    color: #fff;
+}
+
+.cta-btn-primary:hover {
+    background: #035c40;
+    transform: translateY(-2px);
+}
+
+/* ---------------- BOUTON BLANC ---------------- */
+.cta-btn-secondary {
+    background: #fff;
+    color: #027b56;
+}
+
+.cta-btn-secondary:hover{
+    background:#027b56;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+/* =========================================================
+   INFOS COURS
+========================================================= */
+.infos-cours {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+/* ---------------- BOITE ---------------- */
+.infos-cours-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 45px;
+    background: #f4faf7;
+    border: 2px solid #cde6d9;
+    border-radius: 24px;
+}
+
+/* ---------------- TITRE ---------------- */
+.infos-cours-box h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+    color: #1c1917;
+}
+
+/* ---------------- LISTE ---------------- */
+.infos-cours-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.infos-cours-box li {
+    position: relative;
+    padding-left: 28px;
+    margin-bottom: 22px;
+    font-size: 15px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* ---------------- PUCE VERTE ---------------- */
+.infos-cours-box li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #027b56;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* =========================================================
+   AVIS
+========================================================= */
+.avis {
+    padding: 90px 20px;
+    background: #fff;
+}
+
+/* ---------------- CONTAINER ---------------- */
+.avis-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.avis h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 42px;
+    font-weight: 600;
+    color: #1c1917;
+}
+
+/* ---------------- GRID ---------------- */
+.avis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* ---------------- CARD ---------------- */
+.avis-card {
+    position: relative;
+    padding: 35px;
+    background: #eef6f1;
+    border-radius: 24px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .05);
+    transition: .3s ease;
+}
+
+.avis-card:hover {
+    transform: translateY(-4px);
+}
+
+/* ---------------- GUILLEMET ---------------- */
+.guillemet {
+    display: block;
+    font-size: 70px;
+    line-height: 1;
+    color: #027b56;
+    opacity: .25;
+    margin-bottom: 10px;
+}
+
+/* ---------------- TEXTE ---------------- */
+.avis-card p {
+    margin-bottom: 25px;
+    line-height: 1.9;
+    color: #444;
+}
+
+/* ---------------- AUTEUR ---------------- */
+.avis-auteur {
+    display: block;
+    font-weight: 600;
+    color: #027b56;
+}
