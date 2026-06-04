@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-	fetch("http://sitestage/assets/includes/header.html")
+	fetch("http://sitestagegit/assets/includes/header.html")
 		.then(response => response.text())
 		.then(data => {
 			document.getElementById("header").innerHTML = data;
@@ -8,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-	fetch("http://sitestage/assets/includes/footer.html")
+	fetch("http://sitestagegit/assets/includes/footer.html")
 		.then(response => response.text())
 		.then(data => {
 			document.getElementById("footer").innerHTML = data;
