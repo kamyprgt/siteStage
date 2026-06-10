@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	PREFIX = "../";
 	}
 
-	fetch(PREFIX + "/assets/includes/header.html")
+	fetch(PREFIX + "assets/includes/header.html")
 		.then(response => {
         if (!response.ok) {
             throw new Error("Header introuvable");
@@ -21,7 +21,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-	fetch(PREFIX + "/assets/includes/footer.html")
+	fetch(PREFIX + "assets/includes/footer.html")
 		.then(response => {
         if (!response.ok) {
             throw new Error("Footer introuvable");
