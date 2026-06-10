@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", () => {
 	let PREFIX = "/";
 
 	// Si on est dans /pages/
-	if (window.location.pathname.includes("/pages/")) {
+	if (window.location.pathname.includes("pages")) {
 	PREFIX = "../../";
 	}
 
