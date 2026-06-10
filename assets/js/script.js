@@ -4,7 +4,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 	// Si on est dans /pages/
 	if (window.location.pathname.includes("/pages/")) {
-	PREFIX = "../";
+	PREFIX = "../../";
 	}
 
 	fetch(PREFIX + "assets/includes/header.html")
