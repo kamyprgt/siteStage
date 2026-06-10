@@ -1,28 +1,27 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-	fetch("../assets/includes/header.html")
-		.then(response => {
-        if (!response.ok) {
-            throw new Error("Header introuvable");
-        }
-        return response.text();
-		})
-		.then(data => {
-			document.getElementById("header").innerHTML = data;
-		})
-		.catch(error => console.error(error));
+    const base = window.location.pathname.includes("/pages/")
+        ? "../assets/includes/"
+        : "assets/includes/";
 
+    fetch(base + "header.html")
+        .then(r => {
+            if (!r.ok) throw new Error("Header introuvable");
+            return r.text();
+        })
+        .then(data => {
+            document.getElementById("header").innerHTML = data;
+        })
+        .catch(console.error);
 
+    fetch(base + "footer.html")
+        .then(r => {
+            if (!r.ok) throw new Error("Footer introuvable");
+            return r.text();
+        })
+        .then(data => {
+            document.getElementById("footer").innerHTML = data;
+        })
+        .catch(console.error);
 
-	fetch("../assets/includes/footer.html")
-		.then(response => {
-        if (!response.ok) {
-            throw new Error("Footer introuvable");
-        }
-        return response.text();
-		})
-		.then(data => {
-			document.getElementById("footer").innerHTML = data;
-		})
-		.catch(error => console.error(error));
-	});
+});
