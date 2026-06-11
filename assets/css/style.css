@@ -1812,3 +1812,43 @@ img {
     font-weight: 600;
     color: #027b56;
 }
+
+
+
+
+
+
+
+/* =========================================================
+   PAGE ERREUR 404
+========================================================= */
+
+.error-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 2rem;
+    text-align: center;
+
+    background: #f8f6f2;
+}
+
+.error-container {
+    max-width: 700px;
+}
+
+.error-container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.error-text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.error-container p {
+    margin-bottom: 1.5rem;
+}
