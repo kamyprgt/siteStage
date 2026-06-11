@@ -1841,7 +1841,6 @@ img {
 
 .error-container h1 {
     font-size: 4rem;
-    margin-bottom: 1rem;
 }
 
 .error-text {
@@ -1859,4 +1858,5 @@ img {
     color: #d4d4d4;
     margin-bottom: 0.5rem;
     line-height: 1;
+    text-align: center;
 }
