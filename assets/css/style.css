@@ -1852,3 +1852,11 @@ img {
 .error-container p {
     margin-bottom: 1.5rem;
 }
+
+.error-code {
+    font-size: 6rem;
+    font-weight: 300;
+    color: #d4d4d4;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
