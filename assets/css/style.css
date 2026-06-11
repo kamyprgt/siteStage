@@ -1824,39 +1824,24 @@ img {
 ========================================================= */
 
 .error-page {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-
-    padding: 2rem;
+    padding: 4rem 1rem;
     text-align: center;
-
-    background: #f8f6f2;
 }
 
 .error-container {
-    max-width: 700px;
+    max-width: 600px;
 }
 
 .error-container h1 {
-    font-size: 4rem;
-}
-
-.error-text {
-    font-size: 1.2rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
 .error-container p {
-    margin-bottom: 1.5rem;
-}
-
-.error-code {
-    font-size: 6rem;
-    font-weight: 300;
-    color: #d4d4d4;
-    margin-bottom: 0.5rem;
-    line-height: 1;
-    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
 }
