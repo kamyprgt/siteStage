@@ -9,10 +9,15 @@
 
     <meta name="description" content="Page introuvable">
 	
-	<meta name="description" content="Découvrez les avis et témoignages des élèves ayant participé aux cours de Tai Chi Chuan, Qi Gong. Leurs expériences et ressentis après la pratique.">
+	<!-- Autorise uniquement les ressources locales et Bootstrap -->
+	<meta http-equiv="Content-Security-Policy"
+	content="default-src 'self'; img-src 'self' data:; style-src 'self' https://cdn.jsdelivr.net; script-src 'self' https://cdn.jsdelivr.net; object-src 'none'; base-uri 'self'; form-action 'self';">
 
-	<meta name="keywords" content="avis tai chi chuan, témoignages qi gong, retour élèves tai chi, avis cours qi gong, expérience tai chi, bienfaits tai chi">
+	<!-- Limite les informations envoyées aux sites externes -->
+	<meta name="referrer" content="strict-origin-when-cross-origin">
 
+	<!-- Empêche le navigateur de deviner le type des fichiers -->
+	<meta http-equiv="X-Content-Type-Options" content="nosniff">
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
