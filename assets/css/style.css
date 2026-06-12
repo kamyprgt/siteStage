@@ -150,9 +150,13 @@ img {
     transition: .3s;
 }
 
-.nav a:hover,
-.nav a.active {
+.nav a:hover{
     color: #027b56 !important;
+}
+
+.nav-active {
+    color: #027b56 !important;
+    font-weight: 600;
 }
 
 @media (max-width: 991px) {
@@ -647,7 +651,7 @@ img {
 }
 
 /* =========================================================
-   PETITS SMARTPHONES
+   RESPONSIVE ACCUEIl
 ========================================================= */
 @media (max-width: 576px) {
 
