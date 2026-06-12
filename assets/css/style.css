@@ -532,6 +532,158 @@ img {
     color: #027b56;
 }
 
+
+/* =========================================================
+   RESPONSIVE TABLETTE
+========================================================= */
+@media (max-width: 992px) {
+
+    .intro,
+    .introEnseign,
+    .section-split,
+    .section-split-white {
+        padding: 70px 40px;
+        gap: 40px;
+    }
+
+    .intro h2,
+    .introEnseign h2 {
+        font-size: 48px;
+    }
+
+    .section-split-image img {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .cours-card {
+        width: 100%;
+        max-width: 550px;
+    }
+
+    .histoire h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+/* =========================================================
+   RESPONSIVE MOBILE
+========================================================= */
+@media (max-width: 768px) {
+
+    .intro,
+    .introEnseign,
+    .section-split,
+    .section-split-white {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .intro-content,
+    .introEnseign-content,
+    .section-split-content {
+        max-width: 100%;
+    }
+
+    .intro p,
+    .introEnseign p {
+        max-width: 100%;
+    }
+
+    .intro-buttons,
+    .introEnseign-buttons {
+        justify-content: center;
+    }
+
+    .intro h2,
+    .introEnseign h2 {
+        font-size: 40px;
+    }
+
+    .intro h3,
+    .introEnseign h3 {
+        font-size: 24px;
+    }
+
+    .section-split-content h2 {
+        font-size: 32px;
+    }
+
+    .section-split-image img,
+    .intro-image img,
+    .introEnseign-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .histoire,
+    .disciplines,
+    .cours,
+    .galerie,
+    .banderole {
+        padding: 60px 20px;
+    }
+
+    .histoire h2 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .histoire-text p {
+        text-align: center;
+    }
+
+    .cours-card {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .discipline-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+/* =========================================================
+   PETITS SMARTPHONES
+========================================================= */
+@media (max-width: 576px) {
+
+    .intro h2,
+    .introEnseign h2 {
+        font-size: 32px;
+    }
+
+    .intro h3,
+    .introEnseign h3 {
+        font-size: 20px;
+    }
+
+    .section-split-content h2,
+    .banderole h2 {
+        font-size: 28px;
+    }
+
+    .cours-card {
+        padding: 20px;
+    }
+
+    .discipline-card h3,
+    .cours-card h3 {
+        font-size: 22px;
+    }
+
+    .galerie-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .galerie-grid img {
+        height: 250px;
+    }
+}
+
 /* =========================================================
    GALERIE
 ========================================================= */
