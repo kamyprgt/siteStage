@@ -1,0 +1,22 @@
+[
+    {
+        "date": "15 septembre 2026",
+        "heure": "18h00",
+        "lieu": "Maison des loisirs de la Rade",
+        "evenement": "Cours découverte gratuit de Tai Chi Chuan"
+    },
+
+    {
+        "date": "22 septembre 2026",
+        "heure": "16h15",
+        "lieu": "Perros-Guirec",
+        "evenement": "Reprise des cours de Qi Gong"
+    },
+
+    {
+        "date": "5 octobre 2026",
+        "heure": "10h00",
+        "lieu": "Maison des loisirs de la Rade",
+        "evenement": "Atelier spécial respiration et relaxation"
+    }
+]
