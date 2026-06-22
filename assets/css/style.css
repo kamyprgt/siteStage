@@ -1278,6 +1278,23 @@ img {
     color: #2563eb;
 }
 
+/* ---------------- GRILLE TARIFS ---------------- */
+
+.tarifs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Adaptation lorsque plusieurs cartes sont présentes */
+
+.tarifs-grid .tarifs-card {
+    max-width: 500px;
+    flex: 1 1 420px;
+    margin: 0;
+}
+
 /* =========================================================
    HISTORIQUE QI GONG
 ========================================================= */
