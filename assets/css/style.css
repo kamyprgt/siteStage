@@ -1295,6 +1295,13 @@ img {
     margin: 0;
 }
 
+.tarifs-grid .tarifs-card h2{
+    margin-bottom: 45px;
+    font-size: 35px;
+    font-weight: 500;
+    color: #292524;
+}
+
 /* =========================================================
    HISTORIQUE QI GONG
 ========================================================= */
