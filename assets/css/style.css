@@ -494,20 +494,28 @@ img {
 /* =========================================================
    COURS
 ========================================================= */
+
 .cours {
     text-align: center;
 }
 
 /* ---------------- CONTAINER ---------------- */
+
 .cours-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    flex-wrap: wrap;
 }
 
+/* ---------------- CARD ---------------- */
+
 .cours-card {
-    width: 400px;
+    flex: 0 1 calc(33.333% - 20px);
+
+    min-width: 280px;
+    max-width: 380px;
+
     padding: 35px;
     text-align: left;
 }
