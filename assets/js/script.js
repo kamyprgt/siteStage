@@ -14,50 +14,39 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 
-	fetch("assets/includes/footer.html")
-		.then(response => {
-        if (!response.ok) {
-            throw new Error("Footer introuvable");
-        }
-        return response.text();
-		})
-		.then(data => {
-			document.getElementById("footer").innerHTML = data;
-		})
-		.catch(error => console.error(error));
-	
-
 		fetch("assets/json/actualites.json")
 		.then(response => response.json())
 		.then(data => {
 
-			const aujourdHui = new Date();
+			const maintenant = new Date();
 
 			const prochain = data
-				.filter(actu => new Date(actu.dateISO) >= aujourdHui)
-				.sort((a, b) => new Date(a.dateISO) - new Date(b.dateISO))[0];
+				.filter(event => {
+					const dateEvent = new Date(
+						event.date.split("/").reverse().join("-")
+					);
+					return dateEvent >= maintenant;
+				})
+				.sort((a, b) => {
+					const da = new Date(a.date.split("/").reverse().join("-"));
+					const db = new Date(b.date.split("/").reverse().join("-"));
+					return da - db;
+				})[0];
 
-			const container = document.getElementById("actualites-content");
+			const newsText = document.getElementById("news-text");
 
-			if (!prochain) {
-				container.innerHTML = "Aucun événement à venir.";
-				return;
+			if (prochain) {
+				const texte =
+					`📅 ${prochain.date} • 🕒 ${prochain.heure} • 📍 ${prochain.lieu} • ${prochain.evenement}`;
+
+				// on le répète plusieurs fois pour avoir un vrai défilement
+				newsText.innerHTML =
+					`${texte} &nbsp;&nbsp;&nbsp; ◆ &nbsp;&nbsp;&nbsp;`
+					.repeat(5);
+			} else {
+				newsText.textContent =
+					"Aucun événement prévu pour le moment.";
 			}
-
-			container.innerHTML = `
-				<span class="actualites-evenement">
-					${prochain.evenement}
-				</span>
-				—
-				<span class="actualites-date">
-					${prochain.date} à ${prochain.heure}
-				</span>
-				—
-				<span class="actualites-lieu">
-					📍 ${prochain.lieu}
-				</span>
-			`;
-		})
-		.catch(error => console.error(error));
+		});
 
 });
