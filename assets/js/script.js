@@ -37,12 +37,12 @@ window.addEventListener("DOMContentLoaded", () => {
 
 			if (prochain) {
 				const texte =
-					`📅 ${prochain.date} • 🕒 ${prochain.heure} • 📍 ${prochain.lieu} • ${prochain.evenement}`;
+					`📅 ${prochain.date}  • 🕒 ${prochain.heure}  • 📍 ${prochain.lieu}  • ${prochain.evenement}`;
 
 				// on le répète plusieurs fois pour avoir un vrai défilement
 				newsText.innerHTML =
 					`${texte} &nbsp;&nbsp;&nbsp; ◆ &nbsp;&nbsp;&nbsp;`
-					.repeat(5);
+					.repeat(1);
 			} else {
 				newsText.textContent =
 					"Aucun événement prévu pour le moment.";

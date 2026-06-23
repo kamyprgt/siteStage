@@ -1,14 +1,9 @@
 [
     {
-        "date": "20/12/2026",
-        "heure": "17h45",
-        "lieu": "Maison des loisirs de la Rade",
-        "evenement": "Cours découverte de Tai Chi Chuan"
-    },
-    {
-        "date": "10/01/2027",
-        "heure": "16h15",
-        "lieu": "Maison des loisirs de la Rade",
-        "evenement": "Initiation gratuite au Qi Gong"
+        "date": "04/09/2026",
+        "heure": "de 17h à 21h",
+        "lieu": "Bretagne",
+        "evenement": "Forum des associations"
     }
+
 ]
