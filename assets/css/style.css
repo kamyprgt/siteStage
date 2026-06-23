@@ -1488,6 +1488,38 @@ img {
     color: #4d5b53;
 }
 
+/* ---------------- LAYOUT ---------------- */
+
+.formation-layout {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.formation-layout .section-split-image {
+    flex: 1;
+}
+
+.formation-layout .section-split-image img {
+    width: 100%;
+    border-radius: 24px;
+    display: block;
+}
+
+.formation-layout .formation-container {
+    flex: 1;
+    margin: 0;
+}
+
+/* Mobile */
+@media (max-width: 900px) {
+    .formation-layout {
+        flex-direction: column;
+    }
+}
+
 /* =========================================================
    EXPLORATIONS
 ========================================================= */
