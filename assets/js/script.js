@@ -25,9 +25,7 @@ window.addEventListener("DOMContentLoaded", () => {
 			document.getElementById("footer").innerHTML = data;
 		})
 		.catch(error => console.error(error));
-	});
-
-
+	
 
 	fetch("assets/json/actualites.json")
 		.then(response => response.json())
@@ -42,3 +40,5 @@ window.addEventListener("DOMContentLoaded", () => {
 
 		})
 		.catch(error => console.error(error));
+
+});
