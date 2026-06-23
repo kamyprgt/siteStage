@@ -26,3 +26,19 @@ window.addEventListener("DOMContentLoaded", () => {
 		})
 		.catch(error => console.error(error));
 	});
+
+
+
+fetch(prefix + "assets/json/actualites.json")
+    .then(response => response.json())
+    .then(data => {
+
+        const actualites = data.map(actu => {
+            return `📅 ${actu.date} • 🕒 ${actu.heure} • 📍 ${actu.lieu} • ${actu.evenement}`;
+        });
+
+        document.getElementById("actualites-content").innerHTML =
+            actualites.join(" &nbsp;&nbsp;&nbsp;&nbsp; • &nbsp;&nbsp;&nbsp;&nbsp; ");
+
+    })
+    .catch(error => console.error(error));

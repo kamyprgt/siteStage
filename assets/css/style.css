@@ -176,6 +176,53 @@ img {
     }
 }
 
+
+/* =========================================================
+   ACTUALITÉS
+========================================================= */
+
+.actualites-bar {
+    display: flex;
+    align-items: center;
+    background: #2f7d5c;
+    color: white;
+    overflow: hidden;
+    height: 45px;
+}
+
+.actualites-label {
+    padding: 0 20px;
+    font-weight: 600;
+    background: #255f47;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.actualites-container {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+#actualites-content {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: defilement 30s linear infinite;
+}
+
+@keyframes defilement {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
 /* =========================================================
    INTRO
 ========================================================= */
