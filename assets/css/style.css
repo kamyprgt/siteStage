@@ -184,43 +184,39 @@ img {
 .actualites-bar {
     display: flex;
     align-items: center;
-    background: #2f7d5c;
-    color: white;
-    overflow: hidden;
-    height: 45px;
+    background: #edf5ef;
+    border-top: 1px solid #d7e5dc;
+    border-bottom: 1px solid #d7e5dc;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
 }
 
 .actualites-label {
-    padding: 0 20px;
+    background: #2f7d5c;
+    color: white;
+    padding: 14px 22px;
     font-weight: 600;
-    background: #255f47;
-    height: 100%;
-    display: flex;
-    align-items: center;
     white-space: nowrap;
 }
 
-.actualites-container {
+.actualites-content {
     flex: 1;
-    overflow: hidden;
-    position: relative;
+    padding: 14px 25px;
+    color: #3d4d43;
+    font-size: 15px;
 }
 
-#actualites-content {
-    display: inline-block;
-    white-space: nowrap;
-    padding-left: 100%;
-    animation: defilement 30s linear infinite;
+.actualites-date {
+    color: #2f7d5c;
+    font-weight: 600;
 }
 
-@keyframes defilement {
-    from {
-        transform: translateX(0);
-    }
+.actualites-evenement {
+    font-weight: 600;
+    color: #292524;
+}
 
-    to {
-        transform: translateX(-100%);
-    }
+.actualites-lieu {
+    color: #666;
 }
 
 /* =========================================================
