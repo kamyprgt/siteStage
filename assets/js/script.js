@@ -12,7 +12,17 @@ window.addEventListener("DOMContentLoaded", () => {
 		})
 		.catch(error => console.error(error));
 
-
+	fetch("assets/includes/footer.html")
+		.then(response => {
+        if (!response.ok) {
+            throw new Error("Footer introuvable");
+        }
+        return response.text();
+		})
+		.then(data => {
+			document.getElementById("footer").innerHTML = data;
+		})
+		.catch(error => console.error(error));
 
 		fetch("assets/json/actualites.json")
 		.then(response => response.json())
@@ -37,15 +47,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
 			if (prochain) {
 				const texte =
-					`📅 ${prochain.date}  • 🕒 ${prochain.heure}  • 📍 ${prochain.lieu}  • ${prochain.evenement}`;
+					`${prochain.evenement} • ${prochain.date} • ${prochain.heure} • ${prochain.lieu}`;
 
 				// on le répète plusieurs fois pour avoir un vrai défilement
 				newsText.innerHTML =
-					`${texte} &nbsp;&nbsp;&nbsp; ◆ &nbsp;&nbsp;&nbsp;`
-					.repeat(1);
+					` ◆ ${texte} &nbsp;&nbsp;&nbsp◆`
 			} else {
 				newsText.textContent =
-					"Aucun événement prévu pour le moment.";
+					"Aucun événement prévu pour le moment à par les cours.";
 			}
 		});
 

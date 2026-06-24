@@ -945,6 +945,31 @@ img {
     color: #a8a29e;
 }
 
+
+
+/* ---------------- FACEBOOK ---------------- */
+.facebook-link {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 10px;
+    color: #e7e5e4;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.facebook-link:hover {
+    color: #ffffff;
+}
+
+.facebook-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+
+
+
 /* =========================================================
    PAGE MENTIONS LEGALES
 ========================================================= */
@@ -986,6 +1011,13 @@ img {
 
 /* ---------------- TEXTE ---------------- */
 .legal-block p {
+    margin-bottom: 18px;
+    line-height: 1.9;
+    color: #444;
+    font-size: 16px;
+}
+
+.legal-block li {
     margin-bottom: 18px;
     line-height: 1.9;
     color: #444;
