@@ -497,6 +497,9 @@ img {
 .discipline-card {
     width: 320px;
     text-align: left;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---------------- IMAGE ---------------- */
@@ -538,7 +541,8 @@ img {
 }
 
 .discipline-card .btn {
-    margin: 0 18px 22px;
+    margin: auto 18px 22px;
+    width: fit-content;
 }
 
 /* =========================================================
@@ -568,6 +572,9 @@ img {
 
     padding: 35px;
     text-align: left;
+
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---------------- TEXTE ---------------- */
@@ -582,6 +589,11 @@ img {
     line-height: 1.9;
     color: #444;
     margin-bottom: 14px;
+}
+
+.cours-card .btn {
+    margin: auto 0px 0px;
+    width: fit-content;
 }
 
 /* ---------------- ESSAI ---------------- */
@@ -1961,6 +1973,7 @@ img {
 .cta-btn img {
     width: 22px;
     height: 22px;
+    border-radius: 5px;
 }
 
 /* ---------------- BOUTON VERT ---------------- */
