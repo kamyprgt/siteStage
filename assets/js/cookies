@@ -1,6 +1,6 @@
 tarteaucitron.init({
 
-    privacyUrl: "/mentions-legales.html",
+    privacyUrl: "/mentionsLegales.html",
 
     orientation: "bottom",
 
