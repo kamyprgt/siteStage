@@ -1,0 +1,17 @@
+tarteaucitron.init({
+
+    privacyUrl: "/mentions-legales.html",
+
+    orientation: "bottom",
+
+    showIcon: true,
+
+    AcceptAllCta: true,
+
+    DenyAllCta: true,
+
+    highPrivacy: true,
+
+    cookieName: "tarteaucitron"
+
+});
